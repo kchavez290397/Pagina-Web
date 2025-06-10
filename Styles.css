@@ -1,0 +1,171 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y fondo general */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+
+/* Encabezado con imagen de fondo */
+header {
+  /* Se agrega un gradient para que el texto se lea bien */
+  background: linear-gradient(rgba(46, 125, 50, 0.7), rgba(46, 125, 50, 0.7)), 
+              url('imagenes/header-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 80px 10px; /* Puedes ajustar el padding según lo necesites */
+  text-align: center;
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botón de Modo Oscuro/Claro */
+#modeToggle {
+  background-color: #fff;
+  color: #2e7d32;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#modeToggle:hover {
+  background-color: #cfe8cc;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #cfe8cc;
+}
+
+/* Contenido principal */
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Secciones */
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Imágenes en secciones */
+.seccion-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto 20px;
+  border-radius: 5px;
+}
+
+/* Títulos y párrafos */
+h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 15px;
+}
+
+/* Listas */
+ul, ol, dl {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para FAQs */
+dl dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+dl dd {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Testimonios */
+.testimonial {
+  border-left: 4px solid #2e7d32;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Formulario de Contacto */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  width: 150px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: #246b28;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+}
